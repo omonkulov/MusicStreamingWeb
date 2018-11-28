@@ -1,0 +1,10 @@
+{
+    "version": "0.01v",
+    "colors": {
+        "background": "rgb(24, 24, 24)",
+        "light-black": "rgb(40, 40, 40)",
+        "grey": "rgb(170, 170, 170)",
+        "sand": "rgb(200, 200, 200)",
+        "white": "rgb(255, 255, 255)"
+    }
+}
