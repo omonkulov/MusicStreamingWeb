@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div class="content" id="contentDiv">
+        
+    </div>
+    <div class="bottomBar">
+        <div class="controls noselect">
+
+            <a class="material-icons" onclick="prevSong()">skip_previous</a>
+            <a class="material-icons" id="playButton" onclick="changeIcon(this)">play_arrow</a>
+            <a class="material-icons" onclick="nextSong()">skip_next</a>
+
+        </div>
+
+        <div class="progressBar" id="progressBAR">
+            <p class="noselect" id="nowTime">02:31</p>
+            <div class="progress">
+                <p id="playingTitle" class="playingTitle select">I'm Drowining</p>
+                <!--TEST AREA DONT FUCK WITH ME-->
+                <div id="bar" class="bar">
+                    <div id="barbutton" class="foreground">
+                        <div id="redPart" class="redPart"></div>
+                    </div>
+                </div>
+                <!--TEST AREA CLEAR-->
+            </div>
+            <p class="noselect" id="duration">03:23</p>
+        </div>
+
+        <div class="volume">
+
+            <div id="volumeBar" class="volumeBar">
+                <p id="volumeText" class="volumeText noselect ">26%</p>
+                <div id="backgroundBar" class="backgroundBar">
+                    <div id="volumeRedPart" class="volumeRedPart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="misc">
+            <a class="material-icons noselect">library_music</a>
+        </div>
+    </div>
+
+    <audio id="audio" src="https://mp3.vipmp3.me/uzmp3/Ozodbek_Nazarbekov_-_Aytib_ber_arabcha.mp3"></audio>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="artists/Ozodbek/ozodbek.js"></script>
+    <script src="manifest.js"></script>
+    <script src="javascripts/audio.js"></script>
+    <script src="javascripts/progress.js"></script>
+    <script src="javascripts/volume.js"></script>
+    <script src="javascripts/changeIcon.js"></script>
+    <script src="javascripts/loadList.js"></script>
+</body>
+
+</html>

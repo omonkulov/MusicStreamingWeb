@@ -1,0 +1,183 @@
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+}
+body{
+    background-color: #131313;
+}
+
+/*.bottomBar whole continer of the bottom bar*/
+.bottomBar{
+    min-width: 100%;
+    min-height: 2%;
+    display: grid;
+    grid-template-columns:  1fr 5fr 1fr 1fr;
+    background-color:#414141;
+    padding: 5px;
+    position: fixed;
+    color: white;
+    bottom: 0;
+
+}
+
+
+
+/*the end of bottomBar*/
+
+/*.controls*/
+.controls{
+    margin-left: 5%;
+    min-width: 10%;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.controls a{
+    font-size: 24px;;
+}
+
+/*.progressBar*/
+
+/*TODO:
+    html,width or any parent of .progressBar should have 
+    width: X%;
+    height: x%;
+
+    Apperantley element's parents should have width SET or css
+    won't recoginzie it. 
+*/
+.progressBar{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    user-select: none;
+    -moz-user-select: none;
+}
+.progress{
+    width: 80%;
+    text-align: center;
+}
+.select{
+    user-select: text;
+    -webkit-user-select: text;
+}
+.noselect{
+    user-select: none;
+    -moz-user-select: none;
+}
+.bar{
+    width: 100%;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+}
+.foreground{
+    width: 100%;
+    min-height: 5px;
+    background: #131313;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.redPart{
+    min-height: 5px;
+    width: 79%;
+    background-color: red
+}
+
+.foreground .redPart:hover{
+    min-height: 8px;
+}
+
+/*end of .progressBar*/
+
+
+
+
+/*.volume*/
+.volume{
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.volume > p{
+    align-self: center;
+}
+
+.volumeBar{
+    width: 100%;
+    min-height: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+}
+.backgroundBar{
+    width: 100%;
+    min-height: 5px;
+    background: #131313;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.volumeRedPart{
+    min-height: 5px;
+    width: 79%;
+    background-color: red;
+}
+
+.backgroundBar .volumeRedPart:hover{
+    min-height: 8px;
+}
+
+/*the end of .volume*/
+
+
+@media only screen and (max-width: 600px) {
+    .volume {
+        display: none;
+    }
+    .misc{
+        display: none;
+    }
+   .progressBar{
+    justify-content: flex-start;
+    }
+    .bottomBar{
+        grid-template-columns:  1.5fr 3fr 0.2fr;
+    }
+}
+
+
+
+
+.content{
+    text-align: center;
+    height: 94%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: white;
+
+    
+}
+
+.ItemText{
+    text-align: center;
+    margin: 0 auto;
+    height: 25px;
+
+    margin: 5px 20px;
+    background: #414141;
+}
