@@ -1,7 +1,7 @@
 var artists = [
     {
         "artist": "Ayooo",
-        "title": "Aytib ber (arabcha)",
+        "title": "Aytib BRO (arabcha)",
         "url": "https://olagist.net/wp-content/uploads/2021/11/Juice_WRLD_-_Already_Dead.mp3"
     },
     {
