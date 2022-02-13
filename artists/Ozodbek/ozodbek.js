@@ -1,8 +1,8 @@
 var artists = [
     {
-        "artist": "Ozodbek Nazarbekov",
+        "artist": "Ayooo",
         "title": "Aytib ber (arabcha)",
-        "url": "https://mp3.vipmp3.me/uzmp3/Ozodbek_Nazarbekov_-_Aytib_ber_arabcha.mp3"
+        "url": "https://olagist.net/wp-content/uploads/2021/11/Juice_WRLD_-_Already_Dead.mp3"
     },
     {
         "artist": "Ozodbek Nazarbekov",
